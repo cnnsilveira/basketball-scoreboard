@@ -16,6 +16,10 @@ function highlight() {
         highGuest.style.boxShadow = "0 0 20px white"
         highHome.style.boxShadow = "none"
     }
+    else if (countHome === 0 && countGuest === 0) {
+        highHome.style.boxShadow = "none"
+        highGuest.style.boxShadow = "none"
+    }
     else {
         highHome.style.boxShadow = "0 0 20px rgb(255, 123, 123)"
         highGuest.style.boxShadow = "0 0 20px rgb(255, 123, 123)"
@@ -29,8 +33,7 @@ function newGame() {
     countGuest = 0
     scoreHome.innerText = countHome
     scoreGuest.innerText = countGuest
-    highHome.style.boxShadow = "none"
-    highGuest.style.boxShadow = "none"
+    highlight()
 }
 
 // Home
@@ -68,4 +71,3 @@ function plusThreeGuest() {
     scoreGuest.innerText = countGuest
     highlight()
 }
-
