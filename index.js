@@ -9,20 +9,20 @@ let highGuest = document.getElementById("score-wrap-guest")
 
 function highlight() {
     if (countHome > countGuest) {  
-        highHome.style.boxShadow = "0 0 20px white"
-        highGuest.style.boxShadow = "none"
+        highHome.style.border = "3px solid #F94F6D"
+        highGuest.style.border = "none"
     }
     else if (countGuest > countHome) {
-        highGuest.style.boxShadow = "0 0 20px white"
-        highHome.style.boxShadow = "none"
+        highGuest.style.border = "3px solid #F94F6D"
+        highHome.style.border = "none"
     }
     else if (countHome === 0 && countGuest === 0) {
-        highHome.style.boxShadow = "none"
-        highGuest.style.boxShadow = "none"
+        highHome.style.border = "none"
+        highGuest.style.border = "none"
     }
     else {
-        highHome.style.boxShadow = "0 0 20px rgb(255, 123, 123)"
-        highGuest.style.boxShadow = "0 0 20px rgb(255, 123, 123)"
+        highHome.style.border = "3px solid #e6e600"
+        highGuest.style.border = "3px solid #e6e600"
     }
 }
 
