@@ -32,12 +32,12 @@ function newGame() {
     highlight()
 }
 
-function plusPoints(a, b) {
-    if (a == 'home') {
-        countHome = countHome + b
+function plusPoints(player, points) {
+    if (player == 'home') {
+        countHome = countHome + points
         scoreHome.innerText = countHome
-    } else if (a == 'guest') {
-        countGuest = countGuest + b
+    } else if (player == 'guest') {
+        countGuest = countGuest + points
         scoreGuest.innerText = countGuest
     } else {
         alert('Something\'s wrong');
