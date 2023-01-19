@@ -4,11 +4,11 @@
     /* border: 1px solid; */
 }
 @font-face {
-    font-family: clockFont;
-    src: url(CursedTimerUlil-Aznm.ttf);
+    font-family: "Timer";
+    src: url("fonts/timer-font.ttf");
 }
 body {
-    font-family: clockFont;
+    font-family: "Timer";
     background: #E5E5E5;
     display: flex;
     justify-content: center;
